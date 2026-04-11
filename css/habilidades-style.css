@@ -37,13 +37,14 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 70%;
+  width: 90%;
+  max-width: 1100px;
 }
 
 .habilidadesDiv .retanguloFundoCor
 {
   position: relative;
-  width: 320px;
+  width: clamp(260px, 80vw, 320px);
   height: 400px;
   display: flex;
   justify-content: center;

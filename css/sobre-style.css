@@ -1,34 +1,39 @@
 #sobre{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 60px;
+    gap: 30px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 #divSobreImg{
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: center;
     justify-content: center;
-    width: clamp(0px, 50vw, 500px);
-    word-break: break-all;
+    width: clamp(150px, 40vw, 300px);
 }
 
 #imgSobre {
-    width: clamp(0px, 50vw, 300px);
+    width: 100%;
+    max-width: 300px;
     height: auto;
 }
 
 #divSobreText{
     display: flex;
     flex-direction: column;
-    width: clamp(0px, 50vw, 350px);
-    margin-left: 30px;
+    width: clamp(250px, 80vw, 400px);
+    margin-left: 0;
 }
 
 #tituloSobre{
     margin: 0;
-    margin-top: 50px;
+    margin-top: 10px;
     font-family: "Akaya Kanadaka", system-ui;;
     color: white;
 }
@@ -37,4 +42,19 @@
     font-family:Arial, Helvetica, sans-serif;
     line-height: 1.6;
     color: white;
+}
+
+@media (max-width: 600px) {
+    #sobre {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+    #divSobreImg {
+        width: 60vw;
+    }
+    #divSobreText {
+        width: 90vw;
+        text-align: center;
+    }
 }

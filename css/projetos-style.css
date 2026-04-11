@@ -1,0 +1,69 @@
+#projetos{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    
+
+}
+
+#divProjetos{
+
+    width: 90%;
+    word-break: break-all;
+    font-size: large;
+    word-break: break-all;
+    
+}
+
+@media (min-width: 768px) {
+  #divProjetos {
+    width: 70%; /* telas grandes */
+  }
+}
+
+
+#topicoProjetos{
+
+  font-size: 50px;
+  font-family: "Matemasie", sans-serif;
+  color: #F2E852;
+  transition: transform 0.2s;
+  padding-top: clamp(0px, 5vw, 40px);
+  flex-wrap: wrap;
+  word-break: break-all;
+
+  
+}
+
+#topicoProjetos:hover{
+
+  font-size: 50px;
+  font-family: "Matemasie", sans-serif;
+  color: #F2E852;
+  transition: transform 0.2s;
+  transform: scale(1.2);
+  flex-wrap: wrap;
+  word-break: break-all;
+  
+}
+
+
+
+.tituloProjetos{
+
+    font-family: "Matemasie", sans-serif;
+    font-size: 30px;
+    color: #ECF230;
+    margin: 20px;
+
+}
+
+.descricaoProjetos{
+
+    color: white;
+
+}

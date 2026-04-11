@@ -1,0 +1,94 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #050a05;
+  margin: 0;
+  box-sizing: border-box; /* evita estourar por padding */
+}
+
+#menu {
+  padding: 2vh 2vw; /* espaçamento interno responsivo */
+  display: flex;        /* adicionado */
+  justify-content: center;
+  align-items: center;  /* centraliza verticalmente */
+}
+
+#menuNav {
+  display: flex;
+  align-items: center;
+  gap: clamp(8px, 6vw, 96px); /* mínimo, fluido, máximo */
+  flex-wrap: wrap; /* quebra linha no mobile se necessário */
+}
+
+.linkMenu {
+  font-size: clamp(14px, 3vmin, 24px); /* mínimo, fluido, máximo */
+  font-family: "Matemasie", sans-serif;
+  color: #deefdf;
+  transition: transform 0.2s;
+}
+
+.linkMenu:hover {
+  font-size: clamp(14px, 3vmin, 24px); /* mínimo, fluido, máximo */
+  font-family: "Matemasie", sans-serif;
+  color: #deefdf;
+  transition: transform 0.2s;
+  transform: scale(1.2);
+}
+
+.linkDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(40px, 7vw, 70px);
+  height: clamp(40px, 7vw, 70px);
+  border-radius: 50%;
+  transition: background-position 0.4s ease;
+  position: relative;
+  perspective: 300px;
+}
+
+.linkDiv.linkedin {
+  background: linear-gradient(to top, #0A66C2 50%, white 50%);
+  background-size: 100% 200%;
+  background-position: top;
+
+}
+
+.linkDiv.github {
+  background: linear-gradient(to top, #333 50%, white 50%);
+  background-size: 100% 200%;
+  background-position: top;
+}
+
+.linkDiv:hover {
+  background-position: bottom;
+}
+
+/* Imagem preta — visível por padrão */
+.linkImgPreto {
+  width: clamp(25px, 4vw, 40px);
+  height: clamp(25px, 4vw, 40px);
+  position: absolute;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  opacity: 1;
+  transform: rotateX(0deg);
+}
+
+.linkImgBranco {
+  width: clamp(25px, 4vw, 40px);
+  height: clamp(25px, 4vw, 40px);
+  position: absolute;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  opacity: 0;
+  transform: rotateX(180deg);
+}
+
+.linkDiv:hover .linkImgPreto {
+  opacity: 0;
+  transform: rotateX(180deg);
+}
+
+.linkDiv:hover .linkImgBranco {
+  opacity: 1;
+  transform: rotateX(360deg);
+}

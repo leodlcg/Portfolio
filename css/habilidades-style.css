@@ -54,10 +54,11 @@
 
 .habilidadesDiv .retanguloFundoCor::before
 {
-  content:' '; /*Deixa a parte de cima e de baixo das cores sem blur */
+  content:' ';
   position: absolute;
-  left: 80px; /*Faz crescer as cores apartir do meio */
-  width: 50%;
+  left: 50%;                    /* âncora no centro */
+  transform: translateX(-50%); /* centraliza o pseudo-elemento */
+  width: 40%;                  /* largura inicial menor, cresce dos dois lados */
   height: 100%;
   border-radius: 8px;
   transition: 0.5s;
@@ -66,10 +67,8 @@
 .habilidadesDiv .retanguloFundoCor:hover:before,
 .habilidadesDiv .retanguloFundoCor:hover:after
 {
-
-  left: 0; /* Ajusta as cores grande */
-  width: calc(100% - 50px); /* Tamanho do quadrado grande */
-  
+  width: 90%;   /* expande igualmente para esquerda e direita */
+                 /* não precisa alterar left nem transform */
 }
 
 .habilidadesDiv .retanguloFundoCor:nth-child(1):before,
@@ -111,6 +110,7 @@
 .habilidadesDiv .retanguloFundoCor .conteudoBox
 {
   position: relative;
+  text-align: center;
   left: 0;
   padding: 20px 40px;
   background: rgba(255, 255, 255, 0.07);
@@ -123,7 +123,7 @@
 
 .habilidadesDiv .retanguloFundoCor:hover .conteudoBox
 {
-  left: -25px;
+  left: 0;       /* sem deslocamento lateral */
   padding: 60px 40px;
 }
 
@@ -137,21 +137,21 @@
 .habilidadesDiv .retanguloFundoCor .conteudoBox p
 {
   font-size: 20px;
-  margin-bottom: 10px;
-  line-height: 1.4em;
+  line-height: 30px;
 }
 
 .habilidadesDiv .retanguloFundoCor .conteudoBox a
 {
-  display: inline-block;
-  font-size: 1.1em;
+  display: table;
+  text-align: left;
+  font-size: 20px;
   color: #111;
   background: #fff;
   padding: 10px;
   border-radius: 4px;
   text-decoration: none;
   font-weight: 700;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .habilidadesDiv .retanguloFundoCor .conteudoBox a:hover
@@ -181,8 +181,8 @@
   width: 100px;
   height: 100px;
 
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
   border-radius: 8px;
 
   position: absolute;
@@ -199,8 +199,8 @@
   width: 100px;
   height: 100px;
 
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
   border-radius: 8px;
 
   position: absolute;

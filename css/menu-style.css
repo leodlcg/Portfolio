@@ -1,32 +1,25 @@
-body {
-  display: flex;
-  flex-direction: column;
-  background-color: #050a05;
-  box-sizing: border-box; /* evita estourar por padding */
-  margin: 0;
-}
-
-#menu {
+#menu{
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;  /* centraliza verticalmente */
+  justify-content: center;
   position: fixed;
   width: 100%;
   z-index: 1000;
 
 }
 
-.menuNav {
+.menuNav{
+
   display: flex;
   align-items: top;
   justify-content: center;
-  gap: clamp(8px, 6vw, 96px);
-  padding: 5px;
   flex-wrap: wrap;
   width: 100%;
-  height: clamp(40px, 8vw, 70px);
+  height: auto;
+  gap: clamp(8px, 6vw, 96px);
+  padding: 8px 4px 40px; /* padding-bottom compensa o clip-path */
   background: linear-gradient(135deg, #03030a, #1a4fa0);
   clip-path: polygon(
     0% 0%,
@@ -42,14 +35,25 @@ body {
     15% 62%,
     5% 82%,
     0% 68%
-  );
+    );
+
 }
 
-.linkMenu {
+.linkMenu{
 
-  font-size: clamp(14px, 3vmin, 24px); /* mínimo, fluido, máximo */
+  text-decoration: none;
   font-family: "Matemasie", sans-serif;
+  font-size: clamp(15px, 3vmin, 24px); /* mínimo, fluido, máximo */
+  font-weight: 700;
   color: #deefdf;
   transition: transform 0.2s;
 
 }
+
+.linkMenu.active{
+                
+  border-bottom: 5px solid black;
+  transform: scale(1.1); /* opcional: deixa levemente maior */
+  
+}
+

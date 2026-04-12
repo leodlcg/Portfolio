@@ -1,30 +1,15 @@
 #habilidadesSection{
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
+  scroll-margin-top: 50px;
+
 }
 
-#topicoHabilidades{
-
-  font-size: 50px;
-  font-family: "Matemasie", sans-serif;
-  color: white;
-  transition: transform 0.2s;
-  flex-wrap: wrap;
-  word-break: break-all;
-  
-}
-
-#topicoHabilidades:hover{
-
-  transform: scale(1.2);
-  
-}
-
-.habilidadesDiv
-{
+.habilidadesDiv{
 
   display: flex;
   justify-content: center;
@@ -40,196 +25,203 @@
   }
 }
 
-.habilidadesDiv .retanguloFundoCor
-{
-  position: relative;
-  width: clamp(260px, 40vw, 320px);
-  height: 400px;
+.habilidadesDiv .retanguloFundoCor{
+
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 40px 30px;
+  position: relative;
+  width: clamp(260px, 40vw, 320px);
+  height: 400px;
+  margin: 10px 30px; /* margem vertical (cima e baixo): 10px margem horizontal (esquerda e direita): 30px */
   transition: 0.5s;
+
 }
 
-.habilidadesDiv .retanguloFundoCor::before
-{
+.habilidadesDiv .retanguloFundoCor::before{
+
   content:' ';
   position: absolute;
-  left: 50%;                    /* âncora no centro */
-  transform: translateX(-50%); /* centraliza o pseudo-elemento */
-  width: 40%;                  /* largura inicial menor, cresce dos dois lados */
+  width: 55%; /* largura inicial menor, cresce dos dois lados */
   height: 100%;
+  left: 50%; /* âncora no centro */
   border-radius: 8px;
   transition: 0.5s;
+  transform: translateX(-50%); /* centraliza o pseudo-elemento */
+
 }
 
 .habilidadesDiv .retanguloFundoCor:hover:before,
-.habilidadesDiv .retanguloFundoCor:hover:after
-{
-  width: 90%;   /* expande igualmente para esquerda e direita */
-                 /* não precisa alterar left nem transform */
+.habilidadesDiv .retanguloFundoCor:hover:after{
+
+  width: 80%; /* expande igualmente para esquerda e direita */
+
 }
 
 .habilidadesDiv .retanguloFundoCor:nth-child(1):before,
-.habilidadesDiv .retanguloFundoCor:nth-child(1):after
-{
+.habilidadesDiv .retanguloFundoCor:nth-child(1):after{
+
   background: linear-gradient(315deg, #FF6D00, #E53935)
+
 }
 
 .habilidadesDiv .retanguloFundoCor:nth-child(2):before,
-.habilidadesDiv .retanguloFundoCor:nth-child(2):after
-{
+.habilidadesDiv .retanguloFundoCor:nth-child(2):after{
+
   background: linear-gradient(315deg, #FFD700, #FF6B35)
+
 }
 
 .habilidadesDiv .retanguloFundoCor:nth-child(3):before,
-.habilidadesDiv .retanguloFundoCor:nth-child(3):after
-{
+.habilidadesDiv .retanguloFundoCor:nth-child(3):after{
+
   background: linear-gradient(315deg, #1565C0, #00BCD4)
+
 }
 
 .habilidadesDiv .retanguloFundoCor:nth-child(4):before,
-.habilidadesDiv .retanguloFundoCor:nth-child(4):after
-{
+.habilidadesDiv .retanguloFundoCor:nth-child(4):after{
+
   background: linear-gradient(315deg, #D50000, #FF4081)
+
 }
 
 .habilidadesDiv .retanguloFundoCor:nth-child(5):before,
-.habilidadesDiv .retanguloFundoCor:nth-child(5):after
-{
+.habilidadesDiv .retanguloFundoCor:nth-child(5):after{
+
   background: linear-gradient(315deg, #4dff03, #00d0ff)
+
 }
 
 .habilidadesDiv .retanguloFundoCor:nth-child(6):before,
-.habilidadesDiv .retanguloFundoCor:nth-child(6):after
-{
+.habilidadesDiv .retanguloFundoCor:nth-child(6):after{
+
   background: linear-gradient(315deg, #85B7EB, #378ADD)
+
 }
 
-.habilidadesDiv .retanguloFundoCor .conteudoBox
-{
+.habilidadesDiv .retanguloFundoCor .conteudoBox{
+
   position: relative;
   text-align: center;
-  left: 0;
   padding: 20px 40px;
   background: rgba(255, 255, 255, 0.07);
+  color: #fff;
   backdrop-filter: blur(5px); /* blur da cor do fundo */
   border-radius: 8px;
   z-index: 1;
-  transform: 0.5s;
-  color: #fff;
+  transition: 0.5s;
+
 }
 
-.habilidadesDiv .retanguloFundoCor:hover .conteudoBox
-{
-  left: 0;       /* sem deslocamento lateral */
+.habilidadesDiv .retanguloFundoCor:hover .conteudoBox{
+
   padding: 60px 40px;
+
 }
 
-.habilidadesDiv .retanguloFundoCor .conteudoBox h2
-{
+.habilidadesDiv .retanguloFundoCor .conteudoBox h2{
+
   font-size: clamp(15px, 8vmin, 30px);
   color: #fff;
   margin-bottom: 10px;
+
 }
 
-.habilidadesDiv .retanguloFundoCor .conteudoBox p
-{
+.habilidadesDiv .retanguloFundoCor .conteudoBox p{
+
   font-size: 20px;
-  line-height: 30px;
+
 }
 
-.habilidadesDiv .retanguloFundoCor .conteudoBox a
-{
+.habilidadesDiv .retanguloFundoCor .conteudoBox a{
+
   display: table;
   text-align: left;
-  font-size: 20px;
-  color: #111;
-  background: #fff;
-  padding: 10px;
   border-radius: 4px;
-  text-decoration: none;
-  font-weight: 700;
+  padding: 10px;
   margin-top: 10px;
+
 }
 
-.habilidadesDiv .retanguloFundoCor .conteudoBox a:hover
-{
-  background: #ffcf4d;
-  border: 1px solid rgba(255, 0, 88, 0.07);
-}
+@keyframes animacaoCima{
 
-@keyframes animacaoCima {
   0%   { transform: translate(-30%, -30%) translate(0px, 0px); }
   25%  { transform: translate(-30%, -30%) translate(6px, -8px); }
   50%  { transform: translate(-30%, -30%) translate(-7px, 5px); }
   75%  { transform: translate(-30%, -30%) translate(8px, 7px); }
   100% { transform: translate(-30%, -30%) translate(0px, 0px); }
+
 }
 
-@keyframes animacaoBaixo {
+@keyframes animacaoBaixo{
+
   0%   { transform: translate(20%, 20%) translate(0px, 0px); }
   25%  { transform: translate(20%, 20%) translate(-8px, 6px); }
   50%  { transform: translate(20%, 20%) translate(5px, -7px); }
   75%  { transform: translate(20%, 20%) translate(-6px, -8px); }
   100% { transform: translate(20%, 20%) translate(0px, 0px); }
+
 }
 
-.miniBoxCima {
+.miniBoxCima{
+
   display: flex;
+  position: absolute;
   width: 100px;
   height: 100px;
-
+  top: 0; /* Deixar o mini na lateral correta */
+  left: 0; /* Deixar o mini na lateral correta */
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(20px);
   border-radius: 8px;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  opacity: 0;
   transform: translate(-30%, -30%) scale(0);
   transition: opacity 0.4s ease, transform 0.4s ease;
+
 }
 
-.miniBoxBaixo {
+.miniBoxBaixo{
+
   display: flex;
+  position: absolute;
   width: 100px;
   height: 100px;
-
+  bottom: 0; /* Deixar o mini na lateral correta */
+  right: 0; /* Deixar o mini na lateral correta */
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(20px);
   border-radius: 8px;
-
-  position: absolute;
-  bottom: 0;
-  right: 0;
-
-  opacity: 0;
   transform: translate(20%, 20%) scale(0);
   transition: opacity 0.4s ease, transform 0.4s ease;
+
 }
 
-.habilidadesDiv .retanguloFundoCor:hover .miniBoxCima {
+.habilidadesDiv .retanguloFundoCor:hover .miniBoxCima{
+
   opacity: 1;
   transform: translate(-30%, -30%) scale(1);
   animation: animacaoCima 3s ease-in-out 0.4s infinite;
+
 }
 
-.habilidadesDiv .retanguloFundoCor:hover .miniBoxBaixo {
+.habilidadesDiv .retanguloFundoCor:hover .miniBoxBaixo{
+
   opacity: 1;
   transform: translate(20%, 20%) scale(1);
   animation: animacaoBaixo 3s ease-in-out 0.4s infinite;
+
 }
 
 .imgConteudo{
+
   display: flex;
   align-items: center;
+
 }
 
 .imgHabilidades{
+  
   width: 100px;
   height: auto;
+
 }

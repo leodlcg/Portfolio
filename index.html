@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mim</title>
+    <title>Leonardo Domingues — Dev Full Stack</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu-style.css">
     <link rel="stylesheet" href="css/sobre-style.css">
     <link rel="stylesheet" href="css/redesSociais-style.css">
     <link rel="stylesheet" href="css/habilidades-style.css">
     <link rel="stylesheet" href="css/projetos-style.css">
     <link rel="stylesheet" href="css/rodape-style.css">
-    <link rel="stylesheet" href="css/tabela-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Matemasie&display=swap" rel="stylesheet">
@@ -24,63 +23,57 @@
     <header id="menu">
         <nav class="menuNav">
 
-            <a class="linkMenu">Sobre mim</a>
-            <a class="linkMenu">Habilidades</a>
-            <a class="linkMenu">Projetos</a>
+            <a class="linkMenu" href="#sobre">Sobre mim</a>
+            <a class="linkMenu" href="#habilidadesSection">Habilidades</a>
+            <a class="linkMenu" href="#projetos">Projetos</a>
 
         </nav>
-
     </header>
 
     <section id="sobre">
 
         <div id="divSobreImg">
-            <img id="imgSobre" src="imgs/moldura/molduraPixel.png">
-            <img id="teste" src=""></imgid>
+            <img id="imgSobre" src="imgs/moldura/molduraPixel.png" alt="Moldura em pixel da foto de Leonardo">
         </div>
 
 
         <div id="divSobreText">
-            <h1 id="tituloSobre">Leonardo Domingues</h1>
-            <p id="textoSobre">Jovem estudante movido pela curiosidade e vontade de aprender. Com disposição para novos desafios, ele constrói seu caminho com dedicação, buscando sempre crescer tanto no conhecimento quanto como pessoa.</p>
+            <h1 class="textTitulos tituloSobre">Leonardo Domingues</h1>
+            <p class="textDescricoes">Jovem estudante movido pela curiosidade e vontade de aprender. Com disposição para novos desafios, ele constrói seu caminho com dedicação, buscando sempre crescer tanto no conhecimento quanto como pessoa.</p>
         </div>
-
 
     </section>
 
     <section id="redesSociais">
-
         <nav class="menuRedesSociais">
 
-            <div class="linkDiv linkedin">
-                <img class="linkImgPreto" src="/imgs/menu/LinkedinPreto.webp" />
-                <img class="linkImgBranco" src="/imgs/menu/LinkedinBranco.webp"/>
-            </div>
+            <a class="linkDiv linkedin" href="https://www.linkedin.com/in/leonardo-domingues-carvalho/" target="_blank">
+                <img class="linkImgPreto" src="imgs/menu/LinkedinPreto.webp" alt=" Imagem da empresa LinkedIn com fundo branco e logo preta" />
+                <img class="linkImgBranco" src="imgs/menu/LinkedinBranco.webp" alt="Imagem da empresa LinkedIn com fundo preto e logo branca" />
+            </a>
 
-            <div class="linkDiv github">
-                <img class="linkImgPreto" src="/imgs/menu/GithubPreto.webp"/>
-                <img class="linkImgBranco" src="/imgs/menu/GithubBranco.webp"/>
-            </div>
+            <a class="linkDiv github" href="https://github.com/leodlcg" target="_blank">
+                <img class="linkImgPreto" src="imgs/menu/GithubPreto.webp" alt=" Imagem da empresa GitHub com fundo branco e logo preta" />
+                <img class="linkImgBranco" src="imgs/menu/GithubBranco.webp" alt="Imagem da empresa GitHub com fundo preto e logo branca" />
+            </a>
             
         </nav>
-
     </section>
-
 
     <!--  Parte das habilidades: -->
     <section id="habilidadesSection">
-    <h1 id="topicoHabilidades">Skills</h1>
+    <h1 class="textTitulos">Skills</h1>
         <div class="habilidadesDiv">
 
             <div class="retanguloFundoCor">
                 <div class="conteudoBox">
                     <div class="miniBoxCima"></div>
                     <div class="imgConteudo">
-                        <img class="imgHabilidades" src="imgs/habilidades/HTML.webp">
-                        <h2>HTML</h2>
+                        <img class="imgHabilidades" src="imgs/habilidades/HTML.webp" alt="Imagem da linguagem de marcação HTML">
+                        <h2 class="tituloHabilidades">HTML</h2>
                     </div>
-                    <p>Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste</p>
-                    <a href="#">Saiba mais</a>
+                    <p class="textDescricoes">Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste</p>
+                    <a class="textBotoes" href="#">Saiba mais</a>
                     <div class="miniBoxBaixo"></div>
                 </div>
             </div>
@@ -89,11 +82,11 @@
                 <div class="conteudoBox">
                     <div class="miniBoxCima"></div>
                     <div class="imgConteudo">
-                        <img class="imgHabilidades" src="imgs/habilidades/JavaScript.webp">
-                        <h2>JavaScript</h2>
+                        <img class="imgHabilidades" src="imgs/habilidades/JavaScript.webp" alt="Imagem da linguagem de programação JavaScript">
+                        <h2 class="tituloHabilidades">JavaScript</h2>
                     </div>
-                    <p>Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste</p>
-                    <a href="#">Saiba mais</a>
+                    <p class="textDescricoes">Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste</p>
+                    <a class="textBotoes" href="#">Saiba mais</a>
                     <div class="miniBoxBaixo"></div>
                 </div>
             </div>
@@ -102,11 +95,11 @@
                 <div class="conteudoBox">
                     <div class="miniBoxCima"></div>
                     <div class="imgConteudo">
-                        <img class="imgHabilidades" src="imgs/habilidades/CSS.webp">
-                        <h2>CSS</h2>
+                        <img class="imgHabilidades" src="imgs/habilidades/CSS.webp" alt="Imagem da linguagem de estilo CSS">
+                        <h2 class="tituloHabilidades">CSS</h2>
                     </div>
-                    <p>Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste.</p>
-                    <a href="#">Saiba mais</a>
+                    <p class="textDescricoes">Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste.</p>
+                    <a class="textBotoes" href="#">Saiba mais</a>
                     <div class="miniBoxBaixo"></div>
                 </div>
             </div>
@@ -115,11 +108,11 @@
                 <div class="conteudoBox">
                     <div class="miniBoxCima"></div>
                     <div class="imgConteudo">
-                        <img class="imgHabilidades" src="imgs/habilidades/Java.webp">
-                        <h2>Java</h2>
+                        <img class="imgHabilidades" src="imgs/habilidades/Java.webp" alt="Imagem da linguagem de programação Java">
+                        <h2 class="tituloHabilidades">Java</h2>
                     </div>
-                    <p>Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste.</p>
-                    <a href="#">Saiba mais</a>
+                    <p class="textDescricoes">Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste.</p>
+                    <a class="textBotoes" href="#">Saiba mais</a>
                     <div class="miniBoxBaixo"></div>
                 </div>
             </div>
@@ -128,11 +121,11 @@
                 <div class="conteudoBox">
                     <div class="miniBoxCima"></div>
                     <div class="imgConteudo">
-                        <img class="imgHabilidades" src="imgs/habilidades/Spring.webp">
-                        <h2>Spring</h2>
+                        <img class="imgHabilidades" src="imgs/habilidades/Spring.webp" alt="Imagem do framework Spring">
+                        <h2 class="tituloHabilidades">Spring</h2>
                     </div>
-                    <p>Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste.</p>
-                    <a href="#">Saiba mais</a>
+                    <p class="textDescricoes">Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste.</p>
+                    <a class="textBotoes" href="#">Saiba mais</a>
                     <div class="miniBoxBaixo"></div>
                 </div>
             </div>
@@ -141,93 +134,41 @@
                 <div class="conteudoBox">
                     <div class="miniBoxCima"></div>
                     <div class="imgConteudo">
-                        <img class="imgHabilidades" src="imgs/habilidades/React.webp">
-                        <h2>React</h2>
+                        <img class="imgHabilidades" src="imgs/habilidades/React.webp" alt="Imagem da biblioteca React">
+                        <h2 class="tituloHabilidades">React</h2>
                     </div>
-                    <p>Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste.</p>
-                    <a href="#">Saiba mais</a>
+                    <p class="textDescricoes">Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste Texto teste.</p>
+                    <a class="textBotoes" href="#">Saiba mais</a>
                     <div class="miniBoxBaixo"></div>
                 </div>
             </div>
 
         </div>
     </section>
-
-
-
 
     <!--  Parte dos Projetos: -->
     <section id="projetos">
-        <h1 id="topicoProjetos">Projetos</h1>
+        <h1 class="textTitulos">Projetos</h1>
         <div id="divProjetos">
-            <button class="original-button" onclick="alert('Hello!')" >Button</button>
-            <button class="original-button" onclick="alert('Hello!')">Button</button>
-            <button class="original-button" onclick="alert('Hello!')">Button</button>
-            <button class="original-button" onclick="alert('Hello!')">Button</button>
-            <button class="original-button" onclick="alert('Hello!')">Button</button>
+            <button class="textBotoes botoesProjetos" onclick="alert('Hello!')" >Button</button>
+            <button class="textBotoes botoesProjetos" onclick="alert('Hello!')">Button</button>
+            <button class="textBotoes botoesProjetos" onclick="alert('Hello!')">Button</button>
+            <button class="textBotoes botoesProjetos" onclick="alert('Hello!')">Button</button>
+            <button class="textBotoes botoesProjetos" onclick="alert('Hello!')">Button</button>
+            <button class="textBotoes botoesProjetos" onclick="alert('Hello!')">Button</button>
         </div>
 
 
-        <iframe id="projetosIframe" src="https://leodlcg.github.io/Game-Typing/" title="teste"></iframe>
-
-
+        <iframe id="projetosIframe" src="https://leodlcg.github.io/Game-Typing/" title="MeusProjetosPessoais"></iframe>
 
     </section>
-
-
-    <section id="tabela">
-
-        <div id="divTabela">
-
-            <table id="experienciaTabela">
-
-                <thead>
-                    <tr>
-                        <th>Cargo</th>
-                        <th>Empresa</th>
-                        <th>Experiência</th>
-
-                    </tr>
-
-
-                </thead>
-
-                <tbody> 
-                    <tr>
-                        <td>Genio das matematicas</td>
-                        <td>Escola fodona</td>
-                        <td>7 anos</td>
-                    </tr>
-
-                    <tr>
-                        <td>Genio do portugues</td>\
-                        <td>Escola betinha</td>
-                        <td>1 anos</td>
-                    </tr>
-                    <tr>
-                        <td>Genio do historia</td>
-                        <td>Escola alfa</td>
-                        <td>444 anos</td>
-                    </tr>
-
-
-
-                </tbody>
-
-            </table>
-
-        </div>
-
-    </section>
-
 
     <footer id="rodape"> 
 
-
-
-        <p id="textRodape">Aqui sera o rodape</p>
+        <p class="textDescricoes">Aqui sera o rodape</p>
 
     </footer>
 
+<script src="javascript/intersectionObserver.js"></script>
 </body>
 </html>

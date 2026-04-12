@@ -10,8 +10,7 @@
 
   font-size: 50px;
   font-family: "Matemasie", sans-serif;
-  color: #F2E852;
-  padding-bottom: 20px;
+  color: white;
   transition: transform 0.2s;
   flex-wrap: wrap;
   word-break: break-all;
@@ -20,31 +19,31 @@
 
 #topicoHabilidades:hover{
 
-  font-size: 50px;
-  font-family: "Matemasie", sans-serif;
-  color: #F2E852;
-  padding-bottom: 20px;
-  transition: transform 0.2s;
   transform: scale(1.2);
-  flex-wrap: wrap;
-  word-break: break-all;
   
 }
 
 .habilidadesDiv
 {
+
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 90%;
-  max-width: 1100px;
+  width: 75%;
+
+}
+
+@media (max-width: 1520px) { /* Tela pequena*/
+  .habilidadesDiv {
+    width: 100%;
+  }
 }
 
 .habilidadesDiv .retanguloFundoCor
 {
   position: relative;
-  width: clamp(260px, 80vw, 320px);
+  width: clamp(260px, 40vw, 320px);
   height: 400px;
   display: flex;
   justify-content: center;
@@ -130,14 +129,14 @@
 
 .habilidadesDiv .retanguloFundoCor .conteudoBox h2
 {
-  font-size: 2em;
+  font-size: clamp(15px, 8vmin, 30px);
   color: #fff;
   margin-bottom: 10px;
 }
 
 .habilidadesDiv .retanguloFundoCor .conteudoBox p
 {
-  font-size: 1.1em;
+  font-size: 20px;
   margin-bottom: 10px;
   line-height: 1.4em;
 }

@@ -43,11 +43,12 @@
     color: white;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px) { /* Tela pequena */
     #sobre {
         flex-direction: column;
         align-items: center;
-        margin-top: 40px;
+        margin-top: 80px;
+        
     }
     #divSobreImg {
         width: 60vw;

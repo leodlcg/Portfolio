@@ -38,6 +38,16 @@
 
 }
 
+@media (max-width:334px) {
+
+.habilidadesDiv .retanguloFundoCor{
+
+  margin: 70px 30px;
+ 
+}
+  
+}
+
 .habilidadesDiv .retanguloFundoCor::before{
 
   content:' ';
@@ -234,3 +244,4 @@
   height: auto;
 
 }
+

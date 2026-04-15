@@ -24,7 +24,7 @@
 
 #imgSobre{
 
-    width: clamp(200px, 40vw, 400px);
+    width: clamp(0px, 60vw, 400px);
     height: auto;
 
 }
@@ -41,7 +41,7 @@
 
 .tituloSobre{
 
-    font-size: clamp(40px, 5vmin, 80px);
+    font-size: clamp(0px, 17vmin, 50px);
     
 }
 

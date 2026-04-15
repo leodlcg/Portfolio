@@ -11,7 +11,7 @@ body{
 
 .divSeparadores{
 
-    width: clamp(250px, 70vw, 900px);
+    width: clamp(0px, 80vw, 900px);
     height: auto;
     margin-top: 100px;
 
@@ -19,7 +19,7 @@ body{
 
 .imgSeparadore{
 
-    width: clamp(250px, 70vw, 900px);
+    width: clamp(0px, 80vw, 900px);
     height: auto;
 
 }
@@ -28,7 +28,7 @@ body{
 
     margin-bottom: 30px;
     font-family: "Akaya Kanadaka", system-ui;;
-    font-size: 100px;
+    font-size: clamp(0px, 20vw, 100px);
     color: white;
 
 }
@@ -37,7 +37,7 @@ body{
 
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
+    font-size: clamp(0px, 20vw, 25px);
     line-height: 30px;
     color: white;
 

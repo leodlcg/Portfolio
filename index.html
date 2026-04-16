@@ -10,11 +10,8 @@
     <link rel="stylesheet" href="css/redesSociais-style.css">
     <link rel="stylesheet" href="css/habilidades-style.css">
     <link rel="stylesheet" href="css/projetos-style.css">
+    <link rel="stylesheet" href="css/proficiencies-style.css">
     <link rel="stylesheet" href="css/rodape-style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Matemasie&display=swap" rel="stylesheet">
 </head>
 
@@ -200,8 +197,45 @@
     </section>
 
     <div class="divSeparadores">
-        <img class="imgSeparadore" src="imgs/separadores/SeparadorRosaAzul.webp">
+        <img class="imgSeparadore" src="imgs/separadores/SeparadorAzulVerde.webp">
     </div>
+
+    <section id="proficienciesSection">
+    <h1 class="textTitulos">Proficiências</h1>
+
+        <div class="divProficiencies">
+
+            <div class="charts-wrapper">
+ 
+                <!-- INTERESTS -->
+                <div class="chart-group chart-group--interests">
+                    <div class="chart-title">Interesses</div>
+                    <div class="chart-canvas-wrapper" id="wrap-interests">
+                    <canvas id="canvas-interests"></canvas>
+                    </div>
+                </div>
+                
+                <!-- LANGUAGES -->
+                <div class="chart-group chart-group--languages">
+                    <div class="chart-title">Desenvolvimento</div>
+                    <div class="chart-canvas-wrapper" id="wrap-languages">
+                    <canvas id="canvas-languages"></canvas>
+                    </div>
+                </div>
+                
+                <!-- MISC -->
+                <div class="chart-group chart-group--misc">
+                    <div class="chart-title">Ecossistema</div>
+                    <div class="chart-canvas-wrapper" id="wrap-misc">
+                    <canvas id="canvas-misc"></canvas>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </section>
 
     <footer id="rodape"> 
 
@@ -210,5 +244,6 @@
     </footer>
 
 <script src="javascript/intersectionObserver.js"></script>
+<script src="javascript/graphStack.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-const sections = document.querySelectorAll('#sobre, #habilidadesSection, #projetos, #tabela');
+const sections = document.querySelectorAll('#sobreSection, #stackSection, #projetosSection, #proficienciesSection, #experienciasSection');
 const navLinks = document.querySelectorAll('.linkMenu');
 
 const observer = new IntersectionObserver((entries) => {

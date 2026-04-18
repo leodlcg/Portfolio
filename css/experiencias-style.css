@@ -1,0 +1,120 @@
+#experienciasSection{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    scroll-margin-top: 200px;
+
+}
+
+.divExperiencias{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    margin-top: 80px;
+
+}
+
+.divMolduraImg{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    background-color: white;
+    border: 10px solid white;
+    border-radius: 30px;
+
+}
+
+.imgExperiencias{
+
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+
+}
+
+.tituloImg{
+
+    font-family: "Indie Flower", cursive; /* Fonte muito bonita para as fotos*/
+    text-align: center;
+    color: black;
+
+}
+
+.divExperienciaText{
+
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: clamp(0px, 50vw, 750px);
+    min-width: 500px;
+
+}
+
+@media (max-width: 819px){
+
+.divExperienciaText{
+
+    width: 90%;
+    min-width: 0px;
+
+}
+}
+
+.imgFlechas {
+
+    position: absolute;
+    width: 50px;
+    height: auto;
+    
+}
+
+#Flecha01.imgFlechas{
+
+    transform: rotate(100deg);
+    margin-left: 100px;
+    margin-bottom: clamp(400px, 1000px - 45vw, 750px); /* Quando a tela diminui o valor aumenta */
+
+}
+
+@media (max-width: 819px){
+
+#Flecha01.imgFlechas{
+
+
+    opacity: 0;    
+
+}
+}
+
+.textDescricoesExperiencias{
+
+    text-align: justify;
+    margin-left: clamp(0px, 5vw, 100px);
+    font-family: "Roboto Mono", monospace;
+    font-size: clamp(0px, 20vw, 25px);
+    line-height: 35px;
+    color: white;
+    
+}
+
+@media (max-width: 819px){
+
+.textDescricoesExperiencias{
+
+    margin-left: 0;
+}
+
+}

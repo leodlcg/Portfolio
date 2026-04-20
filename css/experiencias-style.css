@@ -22,7 +22,23 @@
 
 }
 
-.divMolduraImg{
+#divExperiencias02.divExperiencias{
+
+    flex-direction: column;
+    margin-top: 200px;
+
+}
+
+.divFiguras{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.figureMolduraImg{
 
     display: flex;
     flex-direction: column;
@@ -35,10 +51,36 @@
 
 }
 
+#figureMolduraImg01.figureMolduraImg{
+
+    border: clamp(0px, 1vw, 10px) solid white;
+
+}
+
 .imgExperiencias{
+ 
+    height: auto;
+
+}
+
+#imgExperiencias01.imgExperiencias{
 
     width: 300px;
-    height: auto;
+    border-radius: 10px;
+
+}
+
+#imgExperiencias02.imgExperiencias{
+
+    width: clamp(0px, 40vw, 700px);
+    border-radius: 10px;
+
+}
+
+#imgExperiencias03.imgExperiencias{
+
+    width: 300px;
+    height: 400px;
     border-radius: 10px;
 
 }
@@ -56,10 +98,17 @@
     display: flex;
     align-items: start;
     justify-content: center;
-    flex-direction: column;
     flex-wrap: wrap;
     width: clamp(0px, 50vw, 750px);
     min-width: 500px;
+
+}
+
+#ExperienciaText01.divExperienciaText{
+
+    display: flex;
+    flex-wrap: nowrap;
+    width: clamp(0px, 70vw, 1600px);
 
 }
 
@@ -73,41 +122,30 @@
 }
 }
 
-.imgFlechas {
-
-    position: absolute;
-    width: 50px;
-    height: auto;
-    
-}
-
-#Flecha01.imgFlechas{
-
-    transform: rotate(100deg);
-    margin-left: 100px;
-    margin-bottom: clamp(400px, 1000px - 45vw, 750px); /* Quando a tela diminui o valor aumenta */
-
-}
-
-@media (max-width: 819px){
-
-#Flecha01.imgFlechas{
-
-
-    opacity: 0;    
-
-}
-}
-
 .textDescricoesExperiencias{
 
     text-align: justify;
-    margin-left: clamp(0px, 5vw, 100px);
     font-family: "Roboto Mono", monospace;
     font-size: clamp(0px, 20vw, 25px);
     line-height: 35px;
     color: white;
     
+}
+
+#Experiencia01.textDescricoesExperiencias{
+
+
+    margin-left: clamp(0px, 5vw, 100px);
+
+
+
+}
+
+#Experiencia02.textDescricoesExperiencias{
+
+    flex-direction: column;
+    margin-right: clamp(0px, 2vw, 40px);
+
 }
 
 @media (max-width: 819px){
@@ -118,3 +156,29 @@
 }
 
 }
+
+.links{
+
+
+}
+
+.button01{
+
+  align-self: flex-start;
+  border-radius: 4px;
+  padding: 15px;
+  font-size: 20px;
+
+}
+
+@media (max-width: 819px){
+
+.button01{
+
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+
+}
+}
+

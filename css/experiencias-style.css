@@ -1,0 +1,200 @@
+#experienciasSection{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    scroll-margin-top: 200px;
+
+}
+
+.divExperiencias{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    margin-top: 80px;
+
+}
+
+#divExperiencias02.divExperiencias{
+
+    flex-direction: column;
+    margin-top: 200px;
+}
+
+@media (max-width: 819px){
+
+#divExperiencias02.divExperiencias{
+
+    margin-top: 50px;
+
+}
+}
+
+.divFiguras{
+
+    display: flex;
+    width: auto;
+    height: auto;
+
+}
+
+.figureMolduraImg{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    background-color: white;
+    border: 10px solid white;
+    border-radius: 30px;
+    margin: 10px;
+
+}
+/*Ajusta as 3 imagens da Cotemig*/
+#figureMolduraImg01.figureMolduraImg{
+    margin-top: 80px;
+}
+
+#figureMolduraImg03.figureMolduraImg{
+    margin-top: 80px;
+}
+
+
+@media (max-width: 1000px){
+
+#figureMolduraImg01.figureMolduraImg{
+
+    display: none;
+
+}
+
+#figureMolduraImg03.figureMolduraImg{
+
+    display: none;
+
+}
+}
+
+.imgExperiencias{
+ 
+    width: auto;
+    height: auto;
+
+}
+
+.tituloImg{
+
+    font-family: "Indie Flower", cursive; /* Fonte muito bonita para as fotos*/
+    text-align: center;
+    color: black;
+
+}
+
+.divExperienciaText{
+
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: clamp(0px, 50vw, 750px);
+    min-width: 500px;
+
+}
+
+#divExperienciaText01.divExperienciaText{
+
+    width: clamp(0px, 50vw, 750px);
+
+}
+
+#divExperienciaText02.divExperienciaText{
+
+    width: clamp(0px, 95vw, 1000px);
+
+}
+
+@media (max-width: 819px){
+
+.divExperienciaText{
+
+    width: 90%;
+    min-width: 0px;
+
+}
+}
+
+.textDescricoesExperiencias{
+
+    text-align: justify;
+    font-family: "Roboto Mono", monospace;
+    font-size: 25px;
+    line-height: 35px;
+    color: white;
+    
+}
+
+
+@media (max-width: 800px){
+
+.textDescricoesExperiencias{
+
+    font-size: 18px;
+}
+}
+
+@media (max-width: 400px){
+
+.textDescricoesExperiencias{
+
+    font-size: 15px;
+}
+}
+
+#Experiencia01.textDescricoesExperiencias{
+
+    margin-left: clamp(0px, 5vw, 100px);
+
+}
+
+@media (max-width: 819px){
+
+#Experiencia01.textDescricoesExperiencias{
+
+    margin-left: 0;
+}
+}
+
+.linksExperiencias{
+
+    align-self: flex-start;
+    border-radius: 4px;
+    padding: 15px;
+
+}
+
+#saibaMais02{
+
+    display: block;
+    text-align: center;
+
+}
+
+@media (max-width: 819px){
+
+#saibaMais01{
+
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+
+}
+}
+

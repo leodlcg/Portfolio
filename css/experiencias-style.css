@@ -28,6 +28,12 @@
     margin-top: 200px;
 }
 
+#divExperiencias03.divExperiencias{
+
+    flex-direction: column;
+    margin-top: 200px;
+}
+
 @media (max-width: 819px){
 
 #divExperiencias02.divExperiencias{
@@ -90,6 +96,12 @@
 
 }
 
+#imgExperiencias04.imgExperiencias{
+
+    width: 1000px;
+
+}
+
 .tituloImg{
 
     font-family: "Indie Flower", cursive; /* Fonte muito bonita para as fotos*/
@@ -116,6 +128,12 @@
 }
 
 #divExperienciaText02.divExperienciaText{
+
+    width: clamp(0px, 95vw, 1000px);
+
+}
+
+#divExperienciaText03.divExperienciaText{
 
     width: clamp(0px, 95vw, 1000px);
 

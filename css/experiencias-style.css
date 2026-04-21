@@ -5,6 +5,7 @@
     justify-content: center;
     flex-direction: column;
     box-sizing: border-box;
+    overflow-x: hidden;
     width: 100%;
     scroll-margin-top: 200px;
 
@@ -15,7 +16,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     position: relative;
     width: 100%;
     margin-top: 80px;
@@ -26,17 +26,45 @@
 
     flex-direction: column;
     margin-top: 200px;
+
+}
+
+#divExperiencias03.divExperiencias{
+
+    margin-top: 100px;
+
+}
+
+@media (max-width: 900px){
+
+#divExperiencias01.divExperiencias{
+
+    flex-direction: column;
+
 }
 
 #divExperiencias03.divExperiencias{
 
     flex-direction: column;
-    margin-top: 200px;
+
+}
 }
 
 @media (max-width: 819px){
 
 #divExperiencias02.divExperiencias{
+
+    margin-top: 50px;
+
+}
+
+#divExperiencias02.divExperiencias{
+
+    margin-top: 50px;
+
+}
+
+#divExperiencias03.divExperiencias{
 
     margin-top: 50px;
 
@@ -51,6 +79,12 @@
 
 }
 
+#divFiguras01.divFiguras{
+
+    flex-direction: column;
+
+}
+
 .figureMolduraImg{
 
     display: flex;
@@ -61,20 +95,31 @@
     background-color: white;
     border: 10px solid white;
     border-radius: 30px;
-    margin: 10px;
+    margin: clamp(0px, 0.5vw, 10px);
 
 }
+
 /*Ajusta as 3 imagens da Cotemig*/
 #figureMolduraImg01.figureMolduraImg{
+
     margin-top: 80px;
+
 }
 
 #figureMolduraImg03.figureMolduraImg{
+
     margin-top: 80px;
+
+}
+
+#figureMolduraImg04Mobile.figureMolduraImg{
+
+    display: none;
+
 }
 
 
-@media (max-width: 1000px){
+@media (max-width: 900px){
 
 #figureMolduraImg01.figureMolduraImg{
 
@@ -83,6 +128,24 @@
 }
 
 #figureMolduraImg03.figureMolduraImg{
+
+    display: none;
+
+}
+
+#figureMolduraImg04Mobile.figureMolduraImg{
+
+    display: flex;
+
+}
+
+#figureMolduraImg04.figureMolduraImg{
+
+    display: none;
+
+}
+
+#figureMolduraImg05.figureMolduraImg{
 
     display: none;
 
@@ -93,13 +156,43 @@
  
     width: auto;
     height: auto;
+    border-radius: 20px;
 
 }
 
-#imgExperiencias04.imgExperiencias{
+#fechaTeste{
 
-    width: 1000px;
+    position: absolute;
+    width: auto;
+    height: 800px;
+    margin-top: 700px;
+    margin-right: clamp(0px, 80vw, 950px);
 
+}
+
+#fechaTeste02{
+
+    position: absolute;
+    width: auto;
+    height: 1150px;
+    margin-top: 1400px;
+    margin-left: clamp(0px, 80vw, 1250px);
+
+}
+
+@media (max-width: 1400px){
+
+#fechaTeste{
+
+    display: none;
+
+}
+
+#fechaTeste02{
+
+    display: none;
+
+}
 }
 
 .tituloImg{
@@ -115,15 +208,12 @@
     display: flex;
     align-items: start;
     justify-content: center;
-    flex-wrap: wrap;
-    width: clamp(0px, 50vw, 750px);
-    min-width: 500px;
 
 }
 
 #divExperienciaText01.divExperienciaText{
 
-    width: clamp(0px, 50vw, 750px);
+    width: clamp(0px, 95vw, 750px);
 
 }
 
@@ -143,6 +233,7 @@
 
 .divExperienciaText{
 
+    flex-wrap: wrap;
     width: 90%;
     min-width: 0px;
 
@@ -158,7 +249,6 @@
     color: white;
     
 }
-
 
 @media (max-width: 800px){
 
@@ -178,7 +268,13 @@
 
 #Experiencia01.textDescricoesExperiencias{
 
-    margin-left: clamp(0px, 5vw, 100px);
+    margin-left: clamp(0px, 2vw, 100px);
+
+}
+
+#Experiencia03.textDescricoesExperiencias{
+
+    margin-right: clamp(0px, 2vw, 100px);
 
 }
 
@@ -187,14 +283,26 @@
 #Experiencia01.textDescricoesExperiencias{
 
     margin-left: 0;
+
+}
+
+#Experiencia03.textDescricoesExperiencias{
+
+    margin-right: 0;
+
 }
 }
 
 .linksExperiencias{
 
-    align-self: flex-start;
     border-radius: 4px;
     padding: 15px;
+
+}
+
+#saibaMais01{
+
+    display: block;
 
 }
 
@@ -205,13 +313,25 @@
 
 }
 
+#saibaMais03{
+
+    display: block;
+    text-align: right;
+
+}
+
 @media (max-width: 819px){
 
 #saibaMais01{
 
-  display: block;
-  margin: 0 auto;
-  text-align: center;
+    text-align: center;
+
+}
+
+
+#saibaMais03{
+
+    text-align: center;
 
 }
 }

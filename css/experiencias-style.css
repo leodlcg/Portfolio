@@ -268,6 +268,7 @@
     margin-bottom: 900px;
     margin-left: 1070px;
     transform: rotate(0deg);
+    z-index: 10;
 
 }
 
@@ -276,6 +277,7 @@
     margin-bottom: 600px;
     margin-left: 1220px;
     transform: rotate(0deg);
+    z-index: 10;
 
 }
 
@@ -284,6 +286,7 @@
     margin-bottom: 300px;
     margin-left: 1070px;
     transform: rotate(0deg);
+    z-index: 10;
 
 }
 
@@ -292,6 +295,7 @@
     margin-top: 0px;
     margin-left: 1220px;
     transform: rotate(0deg);
+    z-index: 10;
 
 }
 
@@ -300,30 +304,25 @@
     margin-top: 300px;
     margin-left: 1070px;
     transform: rotate(0deg);
-
-}
-
-#IconPerdidoPerola{
-
-    margin-top: 600px;
-    margin-left: 1220px;
-    transform: rotate(0deg);
+    z-index: 10;
 
 }
 
 #IconJavaPerola{
 
-    margin-top: 900px;
-    margin-left: 1070px;
+    margin-top: 585px;
+    margin-left: 1220px;
     transform: rotate(0deg);
+    z-index: 10;
 
 }
 
 #IconCoracaoPerola{
 
-    margin-top: 1000px;
-    margin-left: 600px;
+    margin-top: 970px;
+    margin-left: 1070px;
     transform: rotate(0deg);
+    z-index: 10;
 
 }
 /* ============================================================
@@ -369,10 +368,18 @@
     margin-left: clamp(0px, 80vw, 1300px);
 }
 
-#flecha04-04 { 
+#flecha04-01 { 
     height: 940px;
     margin-top: 50px;
     margin-left: clamp(0px, 80vw, 1040px);
+    z-index: 1;
+}
+
+#flecha04-02 { 
+    height:210px;
+    margin-top: 1150px;
+    margin-left: clamp(0px, 80vw, 1000px);
+    z-index: 1;
 }
 
 #flecha05 {

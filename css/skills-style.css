@@ -94,10 +94,189 @@
 .status-line .ok { color: #28c840; }
 
 /* ── SVG / canvas da nuvem ── */
-.cloud-svg { 
-  display: block;
+.divSubjects { 
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
   overflow: visible;
-  width: 100%; 
+  width: 100%;
+}
+
+.textSubject{
+
+
+
+}
+
+/* Subjects: */
+
+#subject0{
+
+  font-size: clamp(5px, 5vw, 30px);
+  color: #E53935;
+
+}
+
+#subject1{
+
+  font-size: clamp(5px, 5vw, 35px);
+  color: #FF6D00;
+
+}
+
+#subject2{
+
+  font-size: clamp(5px, 5vw, 45px);
+  color: #b48eff;
+
+}
+
+#subject3{
+
+  font-size: clamp(5px, 5vw, 45px);
+  color: #febc2e;
+
+}
+
+#subject4{
+
+  font-size: clamp(5px, 5vw, 40px);
+  color: #4dff03;
+
+}
+
+#subject5{
+
+  font-size: clamp(5px, 5vw, 55px);
+  color: #4a9eff;
+
+}
+
+#subject6{
+
+  font-size: clamp(5px, 5vw, 50px);
+  color: #28c840;
+
+}
+
+#subject7{
+
+  font-size: clamp(5px, 5vw, 70px);
+  color: #b48eff;
+
+}
+
+#subject8{
+
+  font-size: clamp(5px, 5vw, 65px);
+  color: #febc2e;
+
+}
+
+#subject9{
+
+  font-size: clamp(5px, 5vw, 60px);
+  color: #4ad9b4;
+
+}
+
+#subject10{
+
+  font-size: clamp(5px, 5vw, 70px);
+  color: #4ad9b4;
+
+}
+
+#subject11{
+
+  font-size: clamp(5px, 5vw, 75px);
+  color: #ff6e6e;
+
+}
+
+#subject12{
+
+  font-size: clamp(5px, 5vw, 100px);
+  color: #4a9eff;
+
+}
+
+#subject13{
+
+  font-size: clamp(5px, 5vw, 65px);
+  color: #28c840;
+
+}
+
+#subject14{
+
+  font-size: clamp(5px, 5vw, 60px);
+  color: #b48eff;
+
+}
+
+#subject15{
+
+  font-size: clamp(5px, 5vw, 55px);
+  color: #febc2e;
+
+}
+
+#subject16{
+
+  font-size: clamp(5px, 5vw, 50px);
+  color: #ff6e6e;
+
+}
+
+#subject17{
+
+  font-size: clamp(5px, 5vw, 45px);
+  color: #4a9eff;
+
+}
+
+#subject18{
+
+  font-size: clamp(5px, 5vw, 40px);
+  color: #28c840;
+
+}
+
+#subject19{
+
+  font-size: clamp(5px, 5vw, 35px);
+  color: #4ad9b4;
+
+}
+
+#subject20{
+
+  font-size: clamp(5px, 5vw, 30px);
+  color: #4ad9b4;
+
+}
+
+#subject21{
+
+  font-size: clamp(5px, 5vw, 25px);
+  color: #b48eff;
+
+}
+
+#subject22{
+
+  font-size: clamp(5px, 5vw, 20px);
+  color: #ff6e6e;
+
+}
+
+#subject23{
+
+  font-size: clamp(5px, 5vw, 20px);
+  color: #febc2e;
+
 }
 
 @keyframes fadeIn {
@@ -106,7 +285,7 @@
 }
 @keyframes pulse { 0%,100%{opacity:.7} 50%{opacity:1} }
 
-.word {
+.subject {
   font-family: 'Courier New', Courier, monospace;
   font-weight: 700;
   text-anchor: middle;
@@ -118,7 +297,7 @@
   transition: transform 0.25s ease, filter 0.25s ease, opacity 0.3s;
 }
 
-.word:hover {
+.subject:hover {
   transform: scale(1.2);
   filter: brightness(1.5);
   }

@@ -93,6 +93,14 @@
 }
 .status-line .ok { color: #28c840; }
 
+
+#cursor{
+
+  position: absolute;
+  width: auto;
+
+}
+
 /* ── SVG / canvas da nuvem ── */
 .divSubjects { 
   display: flex;
@@ -101,12 +109,7 @@
   flex-wrap: wrap;
   overflow: visible;
   width: 100%;
-}
-
-.textSubject{
-
-
-
+  gap: clamp(5px, 5vw, 50px);
 }
 
 /* Subjects: */

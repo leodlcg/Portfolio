@@ -60,6 +60,6 @@ for(let i = 0 ; i < document.querySelectorAll(".subject").length; i++){
 
     let text = document.createTextNode(`${skills[i].skill}`)
     subject.appendChild(text)
-    subject.style.fontSize = `clamp(5px, 5vw, ${(skills[i].peso * 10)}px)`
+    subject.style.fontSize = `max(${skills[i].peso * 0.4}vw, ${skills[i].peso * 5}px)`
 
 }

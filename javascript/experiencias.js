@@ -1,8 +1,8 @@
 let icons = [
-    "IconHTML",
-    "IconCSS",
-    "IconJS",
-    "IconBancoDados",
+    "iconHTML",
+    "iconCSS",
+    "iconJS",
+    "iconBancoDados",
     "iconPhp",
     "iconCotemig",
     "iconLogicaProgramacao",
@@ -30,31 +30,23 @@ function randomArray(){
 
     }
 
-    icons.push("final")
-
-    randomPulsandoAnimation()
-
 }
 
-function randomPulsandoAnimation() {
-    
-    for(let i = 0; i < icons.length; i++){
+async function CotemigIconAnimation() {
+    while (true) {
+        randomArray()
+        for (let i = 0; i < icons.length; i++) {
 
-        if(icons[i] == "final"){
+            const icon = document.getElementById(icons[i]);
 
-            randomArray()
+            icon.style.animation = "pulsando 2s ease-in-out";
+
+            await new Promise(resolve => setTimeout(resolve, 2000));
+
+            icon.style.animation = "";
 
         }
-
-        setTimeout(
-    
-        document.getElementById(icons[i]).style.animation = "pulsando 2.5s ease-in-out infinite"
-        
-        , 100)
-
     }
-
 }
 
-
-randomArray()
+CotemigIconAnimation()

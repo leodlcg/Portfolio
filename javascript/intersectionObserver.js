@@ -1,4 +1,4 @@
-const sections = document.querySelectorAll('#sobreSection, #stackSection, #projetosSection, #proficienciesSection, #experienciasSection');
+const sections = document.querySelectorAll('#sobreSection, #stackSection, #projetosSection, #skillsSection, #experienciasSection');
 const navLinks = document.querySelectorAll('.linkMenu');
 
 const observer = new IntersectionObserver((entries) => {
@@ -12,8 +12,8 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, {
-  threshold: 0.2,
-  rootMargin: '-20% 0px -20% 0px'
+  threshold: 0.1,
+  rootMargin: '0px'
 });
 
 sections.forEach(section => observer.observe(section));

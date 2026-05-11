@@ -31,7 +31,7 @@
     box-sizing: border-box;
     overflow-x: hidden;
     width: 100%;
-    scroll-margin-top: 200px;
+    scroll-margin-top: 50px;
 }
 
 /* ============================================================
@@ -234,24 +234,16 @@
 
 @keyframes pulsando {
 
-    0% {transform: scale(1);}
-    50% {transform: scale(1.2);}
-    100% {transform: scale(1);}
+    0% { scale: 1;}
+    50% { scale: 1.2;}
+    100% { scale: 1;}
     
 }
 
-#iconHTML{
+#iconBancoDados{
 
-    margin-bottom: 30px;
-    margin-left: 870px;
-    transform: rotate(10deg);
-
-}
-
-#iconCSS{
-
-    margin-bottom: 500px;
-    margin-right: 1000px;
+    margin-bottom: 1050px;
+    margin-left: 630px;
     transform: rotate(-10deg);
     
 }
@@ -264,10 +256,10 @@
     
 }
 
-#iconBancoDados{
+#iconCSS{
 
-    margin-bottom: 1050px;
-    margin-left: 630px;
+    margin-bottom: 500px;
+    margin-right: 1000px;
     transform: rotate(-10deg);
     
 }
@@ -282,10 +274,12 @@
 
 }
 
-#iconCotemig{
+#iconCSharp{
 
-    margin-bottom: 0px;
-    margin-right: 0px;
+    width: 90px;
+    height: 95px;
+    margin-top: 450px;
+    margin-right: 1150px;
     transform: rotate(-10deg);
 
 }
@@ -297,20 +291,26 @@
     transform: rotate(5deg);
 }
 
-#iconCSharp{
-
-    width: 90px;
-    height: 95px;
-    margin-top: 450px;
-    margin-right: 1150px;
-    transform: rotate(-10deg);
-
-}
-
 #iconMobile{
 
     margin-top: 550px;
     margin-left: 1150px;
+    transform: rotate(-10deg);
+
+}
+
+#iconHTML{
+
+    margin-bottom: 30px;
+    margin-left: 870px;
+    transform: rotate(10deg);
+
+}
+
+#iconCotemig{
+
+    margin-bottom: 0px;
+    margin-right: 0px;
     transform: rotate(-10deg);
 
 }
